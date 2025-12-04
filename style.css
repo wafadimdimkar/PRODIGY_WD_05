@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg,#001D4A,#004E92);
+  font-family: Poppins, sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  width: 350px;
+  padding: 25px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(0,0,0,0.3);
+  backdrop-filter: blur(8px);
+}
+
+input {
+  width: 85%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+button {
+  width: 90%;
+  background: #00C6FF;
+  border: none;
+  padding: 12px;
+  color: #000;
+  font-size: 18px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #89f7fe;
+  transform: scale(1.05);
+}
+
+.weather-box {
+  margin-top: 20px;
+  display: none;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+img {
+  width: 100px;
+  margin-top: 10px;
+}
+
+.details {
+  margin-top: 10px;
+  font-size: 18px;
+}
